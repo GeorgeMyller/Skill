@@ -1,0 +1,82 @@
+{
+  "mcpServers": {
+    "github-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "REDACTED"
+      }
+    },
+    "cloudrun": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@google-cloud/cloud-run-mcp"
+      ],
+      "env": {}
+    },
+    "_prisma-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "prisma",
+        "mcp"
+      ],
+      "env": {}
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {}
+    },
+    "GitKraken": {
+      "args": [
+        "mcp",
+        "--host=antigravity",
+        "--source=gitlens",
+        "--scheme=antigravity"
+      ],
+      "command": "/Users/georgesouza/Library/Application Support/Antigravity/User/globalStorage/eamodio.gitlens/gk"
+    },
+    "genkit-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "genkit-cli@^1.28.0",
+        "mcp",
+        "--explicitProjectRoot",
+        "--no-update-notification",
+        "--non-interactive"
+      ]
+    },
+    "google-developer-knowledge": {
+      "$typeName": "exa.cascade_plugins_pb.CascadePluginCommandTemplate",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://developerknowledge.googleapis.com/mcp",
+        "--header",
+        "X-Goog-Api-Key: REDACTED"
+      ],
+      "env": {}
+    },
+    "notebooklm": {
+      "command": "/Users/georgesouza/.gemini/antigravity/playground/core-flare/nlm_venv/bin/notebooklm-mcp",
+      "args": [],
+      "env": {
+        "PYTHONPATH": "/Users/georgesouza/.gemini/antigravity/playground/core-flare/nlm_venv/lib/python3.12/site-packages"
+      }
+    }
+  }
+}

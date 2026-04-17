@@ -1,0 +1,32 @@
+{
+  "skill_name": "six-hats",
+  "orchestration_logic": "sequential",
+  "default_rounds": 1,
+  "phases": [
+    {
+      "name": "Exploração",
+      "roles": ["ChapeuBranco", "ChapeuVermelho", "ChapeuAmarelo", "ChapeuVerde", "ChapeuVisionario"],
+      "output_template": "templates/01_relatorio_exploracao.md",
+      "repeatable": true
+    },
+    {
+      "name": "TesteDeEstresse",
+      "roles": ["ChapeuPreto"],
+      "output_template": "templates/02_relatorio_teste_estresse.md",
+      "repeatable": true
+    },
+    {
+      "name": "PonteDoAnjo",
+      "roles": ["Todos"],
+      "instruction": "Identifique Fragmentos Positivos usando prefixo obrigatório 'O que eu mais gosto nessa ideia é...'",
+      "output_template": "templates/03_relatorio_resgate.md",
+      "repeatable": true
+    },
+    {
+      "name": "SinteseFinal",
+      "roles": ["ChapeuAzul"],
+      "output_template": "templates/04_sintese_final.md",
+      "condition": "apenas_na_ultima_rodada"
+    }
+  ]
+}
