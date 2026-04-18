@@ -1,47 +1,110 @@
-# 💎 Skill Vault: George Myller's Core Capabilities (2026)
+# 💎 GeorgeMyller's Skill Vault: Personal AI Capabilities
 
-> **Curated Collection of High-Performance AI Agent Skills**
-> [🇧🇷 PT-BR]: Esta é a minha biblioteca pessoal de capacidades avançadas para agentes de IA, focada em orquestração, automação e desenvolvimento especializado.
-> <br/>
-> [🇺🇸 EN-US]: This is my personal library of advanced AI agent capabilities, focused on orchestration, automation, and specialized development.
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Compatibility](https://img.shields.io/badge/Antigravity-Compatible-blue)
+![Skills](https://img.shields.io/badge/Skills-45%2B-blueviolet)
+![Author](https://img.shields.io/badge/Author-George_Myller-orange)
+
+# 🇧🇷 VERSÃO EM PORTUGUÊS
+
+## 📖 O que é?
+
+Este repositório é o cofre oficial de habilidades especializadas do ecossistema **George Myller**. Ele centraliza módulos de inteligência de alta performance para agentes de IA, focados em desenvolvimento dirigido por especificações (SDD), orquestração de debates e gestão dinâmica de ferramentas.
 
 ---
 
-## 🚀 Active Skills in this Vault
+## 🛠️ Habilidades Principais (Local)
 
-Estes são os módulos de inteligência e ferramentas instalados e prontos para uso neste repositório.
+As seguintes habilidades estão instaladas fisicamente neste diretório:
 
-| Skill | Description | Status |
+| Skill | Função Principal | Status |
 | :--- | :--- | :--- |
-| [**Six Hats**](./six-hats/SKILL.md) | Structured multi-agent debate framework using De Bono's roles + Angel's Advocate. | 🧩 Active |
-| [**MCP Smart Manager**](./mcp-smart-manager/SKILL.md) | Dynamic management of MCP servers to bypass tool limits (100+). | ⚙️ System |
-| [**Code Documenter**](./code-documenter/SKILL.md) | Automated bilingual (PT/EN) documentation using git diff and RAG context. | 📝 Ready |
-| [**ADK Expert**](../../SKILLS/Minhas/.agent/skills/adk-expert/SKILL.md) | Specialist in Google Agent Development Kit (ADK) for Python. | 🤖 Expert |
+| [**Spec-Driven Dev**](./spec-driven-dev/SKILL.md) | Mestre em SDD. Transforma intenções em especificações formais antes de codar. | 🏛️ Master |
+| [**Code Documenter**](./code-documenter/SKILL.md) | Documentação bilíngue automatizada via git diff e contexto RAG. | 📝 Ready |
+| [**MCP Smart Manager**](./mcp-smart-manager/SKILL.md) | Gestão dinâmica de MCPs para contornar o limite de 100 ferramentas. | ⚙️ System |
+| [**Six Hats**](./six-hats/SKILL.md) | Framework de debate multi-agente (7 Chapéus + Advogado do Anjo). | 🧩 Active |
+| [**ADK Expert**](./adk-expert/SKILL.md) | Especialista em Google Agent Development Kit (ADK) para agentes Python. | 🤖 Expert |
 
 ---
 
-## 🛠️ Overview of Specific Capabilities
+## 🔄 Workflows (Comandos Slash)
 
-### 🧠 [Six Hats](./six-hats/SKILL.md)
-Um framework para testar ideias sob múltiplas perspectivas críticas. Evita o pensamento de grupo e garante que pontos cegos sejam identificados antes da implementação.
-> *"Ative a skill `six-hats` para debater esta nova arquitetura."*
+Procedimentos estruturados que utilizam as skills acima:
 
-### ⚙️ [MCP Smart Manager](./mcp-smart-manager/SKILL.md)
-Gerencia o arquivo `mcp_config.json` em tempo real, permitindo que eu alterne entre dezenas de ferramentas sem estourar o limite de processamento.
-> *"Mude para o perfil de `research`"* ou *"Ative as ferramentas do Cloud Run."*
-
-### 📝 [Code Documenter](./code-documenter/SKILL.md)
-Gera READMEs, CHANGELOGs e documentação técnica em Português e Inglês simultaneamente, lendo diretamente o que foi alterado no Git.
-> *"Documente minhas mudanças recentes no projeto."*
-
-### 🤖 [ADK Expert](../../SKILLS/Minhas/.agent/skills/adk-expert/SKILL.md)
-O cérebro por trás da criação de novos agentes Python usando o Google ADK. Domina o ecossistema code-first da Google para multi-agentes.
-> *"Crie um agente ADK que utilize ferramentas de busca e PDF."*
+| Comando | Descrição | Arquivo |
+| :--- | :--- | :--- |
+| `/dev` | Fluxo unificado de SDD + TDD (Spec first, Test first, Code last). | [dev.md](./workflows/dev.md) |
 
 ---
 
-## ⚡ Usage
-Para utilizar qualquer uma dessas habilidades, basta carregar o contexto correspondente ou solicitar a tarefa diretamente. O sistema Antigravity reconhecerá automaticamente a melhor ferramenta para o trabalho.
+## 💻 Stack & Pré-requisitos
+
+Para operar estas skills em performance máxima:
+- **Core**: Ambiente Antigravity AI / Google ADK.
+- **Linguagens**: Python 3.10+ e Node.js.
+- **Ferramentas**: `git` para análise de diferenciais e `uv` para gestão de dependências.
+- **Contexto**: RAG habilitado (via NotebookLM MCP ou vetores locais).
+
+---
+
+## ⚙️ Instalação e Uso
+
+Estas skills devem ser posicionadas na pasta `.agent/skills/` do seu projeto. 
+Invoque-as mencionando o objetivo no chat:
+> *"Use `spec-driven-dev` para planejar a nova feature"*
+
+---
+
+<br/>
+<br/>
+
+# 🇺🇸 ENGLISH VERSION
+
+## 📖 What is it?
+
+This repository is the official skill vault for the **George Myller** ecosystem. It centralizes high-performance intelligence modules for AI agents, focused on Spec-Driven Development (SDD), multi-agent debate orchestration, and dynamic tool management.
+
+---
+
+## 🛠️ Core Skills (Local)
+
+The following skills are physically installed in this directory:
+
+| Skill | Primary Function | Status |
+| :--- | :--- | :--- |
+| [**Spec-Driven Dev**](./spec-driven-dev/SKILL.md) | SDD Master. Transforms intent into formal specifications before coding. | 🏛️ Master |
+| [**Code Documenter**](./code-documenter/SKILL.md) | Automated bilingual documentation via git diff & RAG context. | 📝 Ready |
+| [**MCP Smart Manager**](./mcp-smart-manager/SKILL.md) | Dynamic MCP management to bypass the 100-tool limit. | ⚙️ System |
+| [**Six Hats**](./six-hats/SKILL.md) | Multi-agent debate framework (7 Hats + Angel's Advocate). | 🧩 Active |
+| [**ADK Expert**](./adk-expert/SKILL.md) | Expert in Google Agent Development Kit (ADK) for Python agents. | 🤖 Expert |
+
+---
+
+## 🔄 Workflows (Slash Commands)
+
+Structured procedures utilizing the skills above:
+
+| Command | Description | File |
+| :--- | : :--- | :--- |
+| `/dev` | Unified SDD + TDD flow (Spec first, Test first, Code last). | [dev.md](./workflows/dev.md) |
+
+---
+
+## 💻 Stack & Pre-requisites
+
+To operate these skills at peak performance:
+- **Core**: Antigravity AI Environment / Google ADK.
+- **Languages**: Python 3.10+ and Node.js.
+- **Tools**: `git` for diff analysis and `uv` for dependency management.
+- **Context**: RAG enabled (via NotebookLM MCP or local vector stores).
+
+---
+
+## ⚙️ Installation and Usage
+
+These skills should be placed in the `.agent/skills/` folder of your project.
+Invoke them by mentioning the goal in the chat:
+> *"Use `spec-driven-dev` to plan the new feature"*
 
 ---
 *Curated by George Myller*
