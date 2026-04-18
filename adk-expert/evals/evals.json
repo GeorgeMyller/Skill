@@ -1,0 +1,25 @@
+{
+  "skill_name": "adk-expert",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Crie um agente com google-adk em python chamado 'leitor_pdf' e use o modelo gemini-2.5-flash.",
+      "expected_output": "O código gerado deve importar LlmAgent (ou Agent) do google.adk.agents, instanciar o agente corretamente utilizando o modelo especificado e atualizar explicitamente o arquivo de log/documentação.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Quero fazer um workflow no adk-python que envolva o agente A (pesquisador) e o agente B (escritor), cordenados por um Coordinator.",
+      "expected_output": "O código deve mostrar dois sub-agentes (A e B) sendo passados na lista `sub_agents` de um Coordinator Agent, também atualizando a doc do projeto.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Implemente uma tool customizada que pega o horário atual e me ajude a integrar essa tool no meu agente já existente no arquivo app.py.",
+      "expected_output": "O assistente deve implementar a função de tool em python, importá-la/passá-la no array `tools=[]` do agente existente e documentar a alteração do arquivo, conforme sua diretriz restrita.",
+      "files": [
+        "app.py"
+      ]
+    }
+  ]
+}
